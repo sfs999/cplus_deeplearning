@@ -65,7 +65,7 @@ int main() {
     vector<vector<double>> inputs = { {0, 0}, {0, 1}, {1, 0}, {1, 1} };
     vector<int> labels = { 0, 0, 0, 1 };//与门
     //单层感知器无法解决异或等非线性可分问题
-    Perceptron perceptron(2);//定义了一个感知器，表示样本长度为2，以此来确定w的个数
+    Perceptron perceptron(2);//定义了一个感知器， 表示样本长度为2，以此来确定w的个数
     perceptron.Train(inputs, labels,50);
 
     for (const auto& input : inputs) {
